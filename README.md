@@ -16,6 +16,46 @@
 ### URL
 https://ruslan-website.com/upload/php/contact.html
 
+```html
+
+	<div class="container">
+
+		<h1 class="row">Contact</h1>
+
+		<div class="row">
+			<p>
+				<a href="tel:+642108241461">Phone us directly</a> 
+			</p>
+		</div>
+
+		<div class="row">
+			<p>
+				<a href="mailto:ruslan_aliyev_@hotmail.com?Subject=Travel%20Blog" target="_top">Email us directly</a>
+			</p>
+		</div>
+
+		<div class="row">
+			<form enctype="multipart/form-data" method="POST" action="process_contact.php">
+			    <input type="text" name="sender_name" placeholder="name" class="form-control" />
+			    <input type="email" name="sender_email" placeholder="email" class="form-control" /> 
+			    <input type="text" name="subject" placeholder="subject" class="form-control" />
+			    <textarea name="message" placeholder="message" class="form-control"></textarea>
+			    <input type="file" name="my_file" class="form-control" />
+			    <input type="submit" name="button" value="Submit" class="form-control" />
+			<input type="button" onclick="goBack('Back to Entries View')" value="Back" class="form-control" />
+			</form>
+		</div>
+
+	</div>
+
+	<script>
+		function goBack(msg){
+			Android.goBack(msg);
+		}
+	</script>
+
+```
+
 ## Email
 
 ### Using phone's mail directly
